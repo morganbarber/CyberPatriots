@@ -3,7 +3,7 @@
 FILENAME=${1:-users.txt}
 
 # Users to keep in system.
-KEEP_USERS=(root sys network service daemon bin sync shutdown halt mail ftp nobody)
+KEEP_USERS=(root sys network service daemon bin sync shutdown halt mail ftp nobody _apt sudo)
 
 # To generate random passwords.
 function generate_password() {
