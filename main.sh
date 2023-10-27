@@ -38,3 +38,12 @@ for u in $(awk -F':' '{ print $1}' /etc/passwd); do
         sudo userdel -r $u
     fi
 done
+
+sudo apt-get remove wireshark
+sudo apt-get remove ophcrack
+sudo apt-get autoremove
+
+sudo apt update
+sudo apt upgrade
+
+sudo reboot
